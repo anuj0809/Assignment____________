@@ -1,5 +1,3 @@
-# KraftbaseAssignment
-
 **Go 1: Set Up InfluxDB**
 
 1. Download InfluxDB from the official website (https://portal.influxdata.com/downloads).
