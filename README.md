@@ -1,4 +1,6 @@
-**1: Set Up InfluxDB**
+# KraftbaseAssignment
+
+**Go 1: Set Up InfluxDB**
 
 1. Download InfluxDB from the official website (https://portal.influxdata.com/downloads).
 2. Install InfluxDB on the machine where you want to run it. Follow the installation instructions for your operating system.
@@ -6,8 +8,7 @@
 4. Access the InfluxDB administration interface through a web browser. By default, it runs on http://localhost:8086.
 5. In the InfluxDB administration interface, create a new database named "metrics" where we'll store the metrics data.
 
-
-**2: Set Up Telegraf**
+**Go 2: Set Up Telegraf**
 
 1. Download Telegraf from the official website (https://portal.influxdata.com/downloads).
 2. Install Telegraf on the same machine where InfluxDB is running. Follow the installation instructions for your OS.
@@ -30,8 +31,7 @@
     paths = ["used"]
 ```
 
-
-** 3: Set Up Grafana**
+**Go 3: Set Up Grafana**
 
 1. Download Grafana from the official website (https://grafana.com/grafana/download).
 2. Install Grafana on the same machine where InfluxDB is running. Follow the installation instructions for your OS.
@@ -46,9 +46,7 @@
    - In the "InfluxDB Details" section, set the "Database" field to `metrics`.
    - Save the data source configuration.
 
-
-
-**  4: Set Up MySQL Database**
+**Go 4: Set Up MySQL Database**
 
 1. Install MySQL on the machine where you want to run it. Follow the installation instructions for your OS.
 2. Create a new database for the Spring Boot application, for example, "demospring_db".
@@ -58,9 +56,9 @@
 spring.datasource.url=jdbc:mysql://localhost:3306/<DB_NAME>?useSSL=false&serverTimezone=UTC
 spring.datasource.username=<DB_USERNAME>
 spring.datasource.password=<DB_PASSWORD>
+```
 
-
-** 5: Build and Deploy Spring Boot Application**
+**Go 5: Build and Deploy Spring Boot Application**
 
 1. Copy the Spring Boot application JAR file (e.g., `demospring-0.0.1-SNAPSHOT.jar`) to the target machine.
 2. Open a terminal or command prompt and navigate to the directory where the JAR file is located.
@@ -72,9 +70,7 @@ java -jar demospring-0.0.1-SNAPSHOT.jar
 
 4. The Spring Boot application should start and connect to the MySQL database.
 
-
-
-** 6: Test the Setup**
+**Go 6: Test the Setup**
 
 1. Ensure that InfluxDB, Telegraf, Grafana, and the Spring Boot application are all running without any errors.
 2. Access the Spring Boot application through a web browser to verify that it's up and running (e.g., http://localhost:8080).
